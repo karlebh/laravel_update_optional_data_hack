@@ -11,6 +11,7 @@ class UpdateController
    //Make them nullable because they are all optional
    
       $data = request()->validate([
+	  'user_id' => 'integer', 
           'location' => 'string|nullable',
           'picture' => 'image|nullable',
           'about' =>  'string|nullable',
