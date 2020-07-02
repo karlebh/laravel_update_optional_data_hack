@@ -34,8 +34,9 @@ class UpdateController
                 $profileArray ?? []
             );
       //Update data and filter off the array elements without value using `array_filter()`
-     //Thereby updating only the inputs that were filled
-     
+      //Thereby updating only the inputs that were filled
+      //Note that the `profile()` method is the eloquent relationship of 'User` model with `Profle` model
+      
       auth()->user()->profile()->update(array_filter($all));
       
      
