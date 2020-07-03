@@ -1,5 +1,5 @@
 use App\User;
-use Illuminate\Http\request;
+use Illuminate\Http\Request;
 
 class UpdateController
 {
